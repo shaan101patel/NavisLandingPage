@@ -13,32 +13,32 @@ const Blog = () => {
             slug: 'rag-revolutionizing-call-center-efficiency',
             title: 'RAG: Revolutionizing Call Center Efficiency',
             excerpt: 'Discover how Retrieval-Augmented Generation is transforming customer support by combining AI precision with real-time knowledge access.',
-            author: 'Sarah Chen',
-            date: 'December 15, 2024',
+            author: 'Shaan Patel',
+            date: 'November 28, 2025',
             readTime: '8 min read'
         },
         {
             slug: 'real-time-transcription-best-practices',
             title: 'Real-Time Transcription Best Practices',
             excerpt: 'Learn industry best practices for implementing real-time call transcription across your organization and maximizing ROI.',
-            author: 'Michael Rodriguez',
-            date: 'December 10, 2024',
+            author: 'Shaan Patel',
+            date: 'November 20, 2025',
             readTime: '6 min read'
         },
         {
             slug: 'analytics-that-drive-sales-conversions',
             title: 'Analytics That Drive Sales Conversions',
             excerpt: 'Explore how data-driven insights from call analytics can transform your sales process and boost conversion rates by 35%.',
-            author: 'Emily Thompson',
-            date: 'December 5, 2024',
+            author: 'Shaan Patel',
+            date: 'November 15, 2025',
             readTime: '7 min read'
         },
         {
             slug: 'adaptive-scripts-for-support-wins',
             title: 'Adaptive Scripts for Support Wins',
             excerpt: 'How AI-powered adaptive scripts help support agents deliver personalized, effective responses in real-time.',
-            author: 'David Kim',
-            date: 'December 1, 2024',
+            author: 'Shaan Patel',
+            date: 'November 5, 2025',
             readTime: '5 min read'
         }
     ];
