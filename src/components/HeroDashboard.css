@@ -1,0 +1,224 @@
+.hero-dashboard-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    /* Increased from 1200px */
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}
+
+.dashboard-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Scrollable Areas */
+.scrollable-area {
+    position: absolute;
+    overflow-y: auto;
+    background: #fff;
+    /* Match dashboard bg to cover image */
+    padding: 1rem;
+    border-radius: 8px;
+    /* Custom Scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+}
+
+.scrollable-area::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scrollable-area::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollable-area::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 20px;
+}
+
+/* Specific Scrollable Areas */
+.area-transcript {
+    top: 24%;
+    left: 2%;
+    width: 48%;
+    height: 30%;
+    border: 1px solid #e2e8f0;
+}
+
+.area-notes {
+    bottom: 3%;
+    left: 2%;
+    width: 48%;
+    height: 35%;
+    background: #f8fafc;
+    /* Slightly different bg for notes */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-content: start;
+}
+
+.area-chat {
+    top: 45%;
+    right: 3%;
+    width: 45%;
+    height: 40%;
+    /* Space for chat history */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Content Styling */
+.transcript-line {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #334155;
+}
+
+.transcript-speaker {
+    font-weight: 600;
+    color: #6366f1;
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.note-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 0.85rem;
+    border-left: 4px solid;
+}
+
+.note-yellow {
+    border-left-color: #fbbf24;
+    background: #fffbeb;
+}
+
+.note-blue {
+    border-left-color: #60a5fa;
+    background: #eff6ff;
+}
+
+.note-green {
+    border-left-color: #4ade80;
+    background: #f0fdf4;
+}
+
+.note-pink {
+    border-left-color: #f472b6;
+    background: #fdf2f8;
+}
+
+.chat-bubble {
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 90%;
+}
+
+.chat-ai {
+    background: #eff6ff;
+    color: #1e293b;
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+}
+
+.chat-user {
+    background: #f1f5f9;
+    color: #334155;
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+}
+
+/* Interactive Overlays (Keep for buttons/inputs) */
+.interactive-overlay {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    z-index: 10;
+    /* Above scrollable areas */
+}
+
+.interactive-overlay:hover {
+    background: rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+/* Keep button positions */
+.overlay-call-controls {
+    top: 15%;
+    right: 12%;
+    width: 9%;
+    height: 5%;
+}
+
+.overlay-create-ticket {
+    top: 15%;
+    right: 2%;
+    width: 9%;
+    height: 5%;
+}
+
+.overlay-generate {
+    top: 31%;
+    right: 5%;
+    width: 6%;
+    height: 4%;
+}
+
+.overlay-suggestion {
+    top: 36%;
+    right: 3%;
+    width: 45%;
+    height: 6%;
+}
+
+.overlay-chat-input {
+    bottom: 3%;
+    right: 3%;
+    width: 45%;
+    height: 5%;
+}
+
+/* Toast Notification */
+.dashboard-toast {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: rgba(30, 30, 50, 0.9);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 100;
+    pointer-events: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dashboard-toast.visible {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.toast-icon {
+    color: #4ade80;
+}

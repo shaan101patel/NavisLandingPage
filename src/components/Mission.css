@@ -1,0 +1,47 @@
+.mission-section {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(139, 92, 246, 0.08));
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.mission-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.mission-title {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.mission-statement {
+    font-size: 1.375rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .mission-title {
+        font-size: 2rem;
+    }
+
+    .mission-statement {
+        font-size: 1.125rem;
+    }
+}
