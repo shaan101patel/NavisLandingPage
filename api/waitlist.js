@@ -41,7 +41,7 @@ export async function POST(request) {
         const timestamp = new Date().toISOString();
         console.log('⏰ Timestamp:', timestamp);
 
-        console.log('📊 Attempting to write to Google Sheet:', spreadsheetId);
+        console.log('📊 Attempting to write to Google Sheets:', spreadsheetId);
 
         // Append data to the sheet
         const response = await sheets.spreadsheets.values.append({
