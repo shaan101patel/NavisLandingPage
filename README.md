@@ -1,20 +1,62 @@
-<<<<<<< HEAD
-# React + Vite
+# Navis Copilot Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for Navis Copilot, built with React and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern UI/UX**: Clean and professional design tailored for SaaS products.
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
+- **Key Sections**:
+  - Hero Section with Dashboard preview
+  - Feature highlights
+  - "Featured In" social proof
+  - Testimonials
+  - Pricing Plans
+  - FAQ
+  - Contact Form
+  - Blog & Documentation pages
+- **Legal Pages**: Privacy Policy, Terms of Service, Security, and Compliance.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: CSS Modules / Standard CSS
+- **Routing**: React Router
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# NavisLandingPage
->>>>>>> feccc237c51e343e18c061482521aa034f8a81aa
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd navis-copilot-landing2
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+## 📜 Scripts
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the app for production.
+- `npm run lint`: Runs ESLint to check for code quality.
+- `npm run preview`: Locally preview the production build.
+
+## 📂 Project Structure
+
+```
+src/
+├── assets/         # Images and static assets
+├── components/     # Reusable UI components (Hero, Navbar, Footer, etc.)
+├── hooks/          # Custom React hooks (e.g., useScrollAnimation)
+├── pages/          # Full page layouts (Homepage, About, Contact, etc.)
+├── App.jsx         # Main application component
+└── main.jsx        # Entry point
+```
