@@ -49,12 +49,12 @@ const About = () => {
                                 We believed AI could change that – not by replacing humans, but by empowering them.
                             </p>
                             <p>
-                                Our founders, both veterans of enterprise software and AI research, spent years watching
+                                The founder, a veterans of enterprise software and AI research, spent years watching
                                 call centers operate inefficiently despite having the best intentions. The problem wasn't
-                                effort – it was the absence of real-time, intelligent support.
+                                effort... it was the absence of real-time, intelligent support.
                             </p>
                             <p>
-                                Today, Navis serves 1000+ people processing hundreds of calls.
+                                Today, Navis aims to serve 1000+ people and processing millions of calls.
                             </p>
                         </div>
 
@@ -98,7 +98,7 @@ const About = () => {
                     <div className="container">
                         <div className="cta-content glass-card">
                             <h2>Ready to Transform Your Calls?</h2>
-                            <p>Join 1,000+ teams using Navis to deliver exceptional customer experiences</p>
+                            <p>Join the 1,000+ agents using Navis to deliver exceptional customer experiences</p>
                             <button className="btn-primary">Start Free Trial</button>
                         </div>
                     </div>
