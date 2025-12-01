@@ -120,44 +120,31 @@ p {
 /* Neumorphic 3D Glowing Button */
 .btn-primary {
   position: relative;
-  padding: 1rem 2.5rem;
-  font-size: 1.125rem;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-text-primary);
-  background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
-  border: none;
-  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
   cursor: pointer;
   overflow: hidden;
-  box-shadow: var(--shadow-glow);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
-}
-
-.btn-primary::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent);
-  opacity: 0;
-  transition: opacity 0.4s ease;
+  box-shadow: none;
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: var(--shadow-glow-hover);
-}
-
-.btn-primary:hover::before {
-  opacity: 1;
+  background: rgba(59, 130, 246, 0.15);
+  border-color: #3b82f6;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), inset 0 0 10px rgba(59, 130, 246, 0.3);
+  transform: translateY(-2px);
+  color: #ffffff;
 }
 
 .btn-primary:active {
-  transform: translateY(0) scale(0.98);
+  transform: translateY(0);
 }
 
 /* Container */
