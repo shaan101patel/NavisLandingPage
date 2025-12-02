@@ -8,7 +8,7 @@ const FeaturedIn = () => {
         'The Home Depot',
         'KPMG',
         'Y Combinator',
-        'Georgia Technology',
+        'Georgia Institute of Technology',
         'Nestig',
         'COX',
         'Salesforce'
