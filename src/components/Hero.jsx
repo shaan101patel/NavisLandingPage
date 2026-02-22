@@ -2,6 +2,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import HeroDashboard from './HeroDashboard';
 import './Hero.css';
 import { GithubLogo } from 'phosphor-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     const { ref, isVisible } = useScrollAnimation();
@@ -27,9 +28,9 @@ const Hero = () => {
                             <a href="https://navis-copilot-front-end-pr-1-0.vercel.app/" className="btn-primary hero-cta" target="_blank" rel="noopener noreferrer">
                                 Get Started
                             </a>
-                            <a href="https://navis.fyi/documentation" className="btn-secondary hero-cta-secondary" target="_blank" rel="noopener noreferrer">
+                            <Link to="/documentation" className="btn-secondary hero-cta-secondary">
                                 <GithubLogo className="play-icon" size={16} weight="fill" /> Open Source
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
